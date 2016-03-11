@@ -1,0 +1,5 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name">NetworkMonitor</string>
+    <string name="today_flow">今日已使用流量 <xliff:g id="today">%1$s</xliff:g>M</string>
+    <string name="month_flow">本月已使用流量 <xliff:g id="month">%1$s</xliff:g>M</string>
+</resources>

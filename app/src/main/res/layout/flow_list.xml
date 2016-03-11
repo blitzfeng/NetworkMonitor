@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    >
+    <RelativeLayout
+        android:id="@+id/rl_flow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+        <TextView
+            android:id="@+id/text_today_flow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/today_flow"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            style="@style/title1"
+            />
+        <TextView
+            android:id="@+id/text_month_flow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/month_flow"
+            android:layout_marginTop="20dp"
+            style="@style/title1"
+            android:layout_alignLeft="@id/text_today_flow"
+            android:layout_below="@id/text_today_flow"
+            />
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_flow"
+        android:layout_marginBottom="20dp"
+        ></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
